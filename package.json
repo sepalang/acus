@@ -1,0 +1,25 @@
+{
+  "name": "acus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "parcel src/index.html",
+    "build": "yarn clean && parcel build src/acus/index.js -o acus.js --global acus --no-minify --target browser",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "yarn": "^1.22.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.8.21",
+    "react": "0.14.9",
+    "react-dom": "0.14.9",
+    "sizzle": "^2.3.4"
+  }
+}
